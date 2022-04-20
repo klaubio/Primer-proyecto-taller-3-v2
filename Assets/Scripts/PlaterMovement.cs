@@ -33,6 +33,12 @@ public class PlaterMovement : MonoBehaviour
         {
             crouch = false;
         }
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            animator.Play("Golpe");
+        }
+
+
 
         animator.SetFloat("VerticalSpeed", controller.m_Rigidbody2D.velocity.y);
         animator.SetBool("IsGround", controller.m_Grounded);
